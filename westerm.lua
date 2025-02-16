@@ -43,6 +43,11 @@ end)
 -- keymaps
 config.keys = {
 	{
+		key = 'w',
+		mods = 'CTRL',
+		action = wezterm.action.CloseCurrentPane { confirm = false },
+	},
+	{
 		key = "E",
 		mods = "CTRL|SHIFT|ALT",
 		action = wezterm.action.EmitEvent("toggle-colorscheme"),
