@@ -14,7 +14,10 @@ config.term = "xterm-256color" -- Set the terminal type
 config.cell_width = 0.9
 config.window_background_opacity = 0.9
 config.prefer_egl = true
-config.font_size = 18.0
+config.font_size = 14.0
+config.font =
+  wezterm.font('JetBrains Mono', { weight = 'Regular' })
+
 
 config.window_padding = {
 	left = 8,
@@ -46,7 +49,7 @@ config.keys = {
 		key = 'w',
 		mods = 'CTRL',
 		action = wezterm.action.CloseCurrentPane { confirm = false },
-	},
+	  },
 	{
 		key = "E",
 		mods = "CTRL|SHIFT|ALT",
@@ -147,7 +150,6 @@ config.colors = {
 }
 
 config.window_frame = {
-	font = wezterm.font({ family = "Iosevka Custom", weight = "Regular" }),
 	active_titlebar_bg = "#0c0b0f",
 	border_left_width = "1px",
 	border_right_width = "1px",
