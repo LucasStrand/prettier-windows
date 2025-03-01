@@ -6,7 +6,6 @@ To configure Zebar:
 Copy vanilla-clear widget to Zebar directory
 cp ./vanilla-clear/ ~/.glzr/zebar/
 Than disable other widgets in Zebar system tray.
-(DOES NOT WORK)
 
 powertoys from microsoft store https://learn.microsoft.com/en-us/windows/powertoys/run
 
